@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: efee7841904856240b74a567a24a80ac
+guid: 4a472e2c6b86ec1459ad75c41d426f16
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -19,19 +19,19 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Bone length in
       copied configuration does not match position in animation file:\n\t'mixamorig:LeftUpLeg'
-      : position error = 43.622070 mm\n\t'mixamorig:LeftLeg' : position error = 17.286108
-      mm\n\t'mixamorig:LeftFoot' : position error = 10.821075 mm\n\t'mixamorig:LeftToeBase'
-      : position error = 23.008043 mm\n\t'mixamorig:RightUpLeg' : position error
-      = 43.114353 mm\n\t'mixamorig:RightLeg' : position error = 17.278788 mm\n\t'mixamorig:RightFoot'
-      : position error = 11.078729 mm\n\t'mixamorig:RightToeBase' : position error
-      = 23.440474 mm\n"
+      : position error = 11.422941 mm\n\t'mixamorig:LeftLeg' : position error = 37.441544
+      mm\n\t'mixamorig:LeftFoot' : position error = 66.795334 mm\n\t'mixamorig:LeftToeBase'
+      : position error = 106.162308 mm\n\t'mixamorig:RightUpLeg' : position error
+      = 11.050797 mm\n\t'mixamorig:RightLeg' : position error = 37.372635 mm\n\t'mixamorig:RightFoot'
+      : position error = 66.552971 mm\n\t'mixamorig:RightToeBase' : position error
+      = 109.438431 mm\n"
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -40,11 +40,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: fast run
+      name: right strafe
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 16
+      lastFrame: 20
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -53,10 +53,10 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
-      loopBlendOrientation: 0
+      loopBlendOrientation: 1
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
+      keepOriginalOrientation: 1
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
