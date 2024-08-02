@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering;
 using CallbackContext = UnityEngine.InputSystem.InputAction.CallbackContext;
 
 public class CharacterMovement : MonoBehaviour
@@ -9,7 +10,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private Animator anim;
 
 
-    [SerializeField] private VectorDampener motionVector;
+    [SerializeField] private VectorDampener motionVector = new VectorDampener(clamp:true);
     private int velXId;
     private int velYId;
 
@@ -20,8 +21,9 @@ public class CharacterMovement : MonoBehaviour
         
     }
 
-    private void ToggleSprint(CallbackContext ctx)
+    public void ToggleSprint(CallbackContext ctx)
     {
+        
         bool val = ctx.ReadValueAsButton();
         motionVector.Clamp =!val;
     }

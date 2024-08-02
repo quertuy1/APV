@@ -15,6 +15,16 @@ public struct VectorDampener
     [SerializeField] private float clampMagnitude;
     private bool clamp;
 
+
+    public VectorDampener(bool clamp)
+    {
+        currentValue = Vector2.zero; 
+        targetValue=Vector2.zero; 
+        velocity = Vector2.zero; 
+        smoothTime = 0;
+        clampMagnitude = 0;
+        this.clamp = clamp;
+    }
     public void Update()
     {
         currentValue = Vector2.SmoothDamp(currentValue,
